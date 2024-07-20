@@ -1,0 +1,60 @@
+/* src/pages/Posts.css */
+
+.posts-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.post {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 32%;
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.post img {
+  width: 100%;
+  height: auto;
+}
+
+.post-content {
+  padding: 16px;
+}
+
+.avatar {
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 50%;
+}
+
+.name {
+  font-size: medium;
+  font-weight: 500;
+}
+
+.text {
+  font-size: small;
+}
+
+.posts-error-message {
+  margin: auto;
+  font-size: large;
+  color: red;
+  font-weight: 500;
+}
+
+@media (max-width: 1200px) {
+  .post {
+    max-width: 48%;
+  }
+}
+
+@media (max-width: 768px) {
+  .post {
+    max-width: 99%;
+  }
+}
